@@ -1,0 +1,50 @@
+body {
+    min-height: 100vh;
+}
+
+header span {
+    display: block;
+    background-color: blue;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+header nav {
+    display: flex;
+    background-color: blueviolet;
+    text-align: center;
+    padding: 1rem;
+}
+
+nav a {
+    flex: auto;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+main h1{
+    grid-column: 1 / -1;
+}
+
+.card-about-me {
+    grid-column: 1 / 2;
+    background-color: aqua;
+    padding: 1rem;
+    margin: 0.5rem;
+}
+
+.card-resources {
+    grid-column: 2 / -1;
+    background-color: green;
+    padding: 1rem;
+    margin: 0.5rem;
+}
+
+footer {
+    background-color: brown;
+    text-align: center;
+    padding: 1rem;
+}
