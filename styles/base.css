@@ -1,24 +1,40 @@
+:root {
+    --background-accent: #38405F;
+    --banner-accent: #FF0035;
+    --nav-accent: #59546C;
+    --card-accent: #8B939C;
+
+}
 body {
     min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: 'PT mono';
+    background-color: var(--background-accent);
+    color: aliceblue;
 }
 
 header span {
     display: block;
-    background-color: blue;
+    background-color: var(--banner-accent);
     text-align: center;
     padding: 1.5rem;
 }
 
 header nav {
     display: flex;
-    background-color: blueviolet;
+    background-color: var(--nav-accent);
     text-align: center;
     padding: 1rem;
 }
 
 nav a {
     flex: auto;
+    text-decoration: none;
+    color: aliceblue;
 }
+
+nav a:hover {color: var(--banner-accent);}
 
 main {
     display: grid;
@@ -27,29 +43,49 @@ main {
 
 main h1{
     grid-column: 1 / -1;
+    text-align: center;
 }
 
-.card-about-me {
-    grid-column: 1 / 2;
-    background-color: aqua;
+.card {
+    background-color: var(--card-accent);
     padding: 1rem;
     margin: 0.5rem;
+    color: black;
 }
 
-.card-about-me img {
-    width: 20vh;
+.card-1 {
+    grid-column: 1 / 2;
+}
+
+.card-2 {
+    grid-column: 2 / -1;
+}
+
+.content {
+    display: flex;
+}
+
+.content img {
+    width: 30vh;
     height: auto;
 }
 
-.card-resources {
-    grid-column: 2 / -1;
-    background-color: green;
-    padding: 1rem;
-    margin: 0.5rem;
+.content p {
+    flex: auto;
+    padding-left: 2rem;
+    font-family: 'Open Sans';
+}
+
+.content ul {
+    list-style-type: none;
+}
+
+.content a {
+    color: cornsilk;
 }
 
 footer {
-    background-color: brown;
+    background-color: var(--banner-accent);
     text-align: center;
     padding: 1rem;
 }
