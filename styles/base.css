@@ -63,15 +63,19 @@ main h1{
 
 .content {
     display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
 }
 
 .content img {
-    width: 30vh;
+    flex: 0 0 30vh;
+    max-width: 30vh;
     height: auto;
+    border: 0.2rem solid #38405F;
 }
 
 .content p {
-    flex: auto;
+    flex: 1 1 200px;
     padding-left: 2rem;
     font-family: 'Open Sans';
 }
