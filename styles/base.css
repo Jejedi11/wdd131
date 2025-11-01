@@ -1,8 +1,12 @@
 :root {
-    --background-accent: #38405F;
-    --banner-accent: #FF0035;
-    --nav-accent: #59546C;
+    --background-accent: #1a1a1a;
+    --banner-accent: #FF6b6b;
+    --nav-accent: #2d2d2d;
     --card-accent: #8B939C;
+    --primary-text: #ffffff;
+    --secondary-text: #000000;
+    --link-color: #87ceeb;
+    --hover-color: #ff4757;
 
 }
 body {
@@ -11,7 +15,7 @@ body {
     padding: 0;
     font-family: 'PT mono';
     background-color: var(--background-accent);
-    color: aliceblue;
+    color: var(--primary-text);
 }
 
 header span {
@@ -31,10 +35,10 @@ header nav {
 nav a {
     flex: auto;
     text-decoration: none;
-    color: aliceblue;
+    color: var(--primary-text);
 }
 
-nav a:hover {color: var(--banner-accent);}
+nav a:hover {color: var(--hover-color);}
 
 main {
     display: grid;
@@ -50,7 +54,7 @@ main h1{
     background-color: var(--card-accent);
     padding: 1rem;
     margin: 0.5rem;
-    color: black;
+    color: var(--secondary-text);
 }
 
 .card-1 {
@@ -71,7 +75,7 @@ main h1{
     flex: 0 0 30vh;
     max-width: 30vh;
     height: auto;
-    border: 0.2rem solid #38405F;
+    border: 0.2rem solid var(--background-accent);
 }
 
 .content p {
@@ -85,7 +89,7 @@ main h1{
 }
 
 .content a {
-    color: cornsilk;
+    color: var(--link-color);
 }
 
 footer {
