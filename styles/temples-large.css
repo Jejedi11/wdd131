@@ -25,6 +25,7 @@
     #menuList li {
         width: 100%;
         padding: 1.3rem;
+        background-color: var(--header-accent);
     }
 
     main {
