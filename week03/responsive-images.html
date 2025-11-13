@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wdd131 | Responsive Images</title>
+    <meta name="description" content="Showcasing using different sized images for a responsive page">
+    <meta name="author" content="James Michelson">
+    <link rel="stylesheet" href="styles/responsive-images.css">
+    <script defer src="scripts/test.js"></script>
+</head>
+<body>
+    <main>
+        <h1 id="fullname"></h1>
+        <div class="hero">
+            <picture>
+                <source media="min-width: 1000px" srcset="images/hero-large.webp">
+                <source media="min-width: 500px" srcset="images/hero-medium.webp">
+                <img src="images/hero-small.webp" alt="Las Vegas Temple" width="500" height="250">
+            </picture>
+        </div>
+    </main>
+</body>
+</html>
