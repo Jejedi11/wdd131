@@ -1,0 +1,42 @@
+@media (min-width:37.5em) {
+
+    main {
+        position: relative;
+    }
+
+    #data {
+        position: absolute;
+        top: 20%;
+        left: 10%;
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 2rem;
+    }
+
+    h2 {
+        background-color: var(--az-yellow);
+        text-align: left;
+        padding-right: 3rem;
+        position: relative;
+        left: -2.4rem;
+    }
+
+    .card img {
+        display: none;
+    }
+
+    #weather h2::after {
+        content: "  ⛅";
+    }
+
+    #weather {
+        position: absolute;
+        bottom: 20%;
+        right: 10%;
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 2rem;
+    }
+
+    footer {
+        margin-top: 0;
+    }
+}

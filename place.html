@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arizona</title>
+    <meta name="description" content="A weather overview of Arziona">
+    <meta name="author" content="James Michelson">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script defer src="scripts/place.js"></script>
+    <script defer src="scripts/getdates.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Arizona</h1>
+    </header>
+    <main>
+        <div id="accent"></div>
+        <picture>
+            <source media="(min-width: 1000px)" srcset="images/arizona_large.webp">
+            <source media="(min-width: 500px)" srcset="images/arizona_medium.webp">
+            <img src="images/arizona_small.webp" alt="Arizona" width="500" height="250">
+        </picture>
+        <div class="card" id="data">
+            <h2>Data</h2>
+            <table>
+                <tr>
+                    <td>Area:</td>
+                    <td>295,260 sq km</td>
+                </tr>
+                <tr>
+                    <td>Population:</td>
+                    <td>7,691,740</td>
+                </tr>
+                <tr>
+                    <td>Capital:</td>
+                    <td>Phoenix</td>
+                </tr>
+                <tr>
+                    <td>Language:</td>
+                    <td>English</td>
+                </tr>
+                <tr>
+                    <td>Currency:</td>
+                    <td>USD</td>
+                </tr>
+                <tr>
+                    <td>Time Zone:</td>
+                    <td>UTC -7</td>
+                </tr>
+                <tr>
+                    <td>Calling Code:</td>
+                    <td>+1</td>
+                </tr>    
+                <tr>
+                    <td>Internet TLD</td>
+                    <td>.az</td>
+                </tr>        
+            </table>
+        </div>
+        <div class="card" id="weather">
+            <h2>Weather</h2>
+            <img src="images/cloud-sun.svg" alt="Weather Icon">
+            <table>
+                <tr>
+                    <td>Temperature:</td>
+                    <td id="temp"></td>
+                </tr>
+                <tr>
+                    <td>Conditions:</td>
+                    <td id="conditions"></td>
+                </tr>
+                <tr>
+                    <td>Wind:</td>
+                    <td id="wind"></td>
+                </tr>
+                <tr>
+                    <td>Wind Chill:</td>
+                    <td id="windchill"></td>
+                </tr>
+            </table>
+        </div>
+    </main>
+    <footer>
+        <p>
+            ©<span id="current-year"></span> | James Michelson | Arizona
+        </p>
+        <p>
+            <span id="last-populated"></span>
+        </p>
+    </footer>
+</body>
+</html>

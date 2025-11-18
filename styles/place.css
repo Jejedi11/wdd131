@@ -1,0 +1,68 @@
+:root {
+    --az-blue: #334878;
+    --az-red: #AB2945;
+    --az-yellow: hsla(51, 71%, 49%, 0.8);
+    --header-footer: #fff;
+}
+
+
+body {
+    margin: 0;
+    
+    font-family: montserrat;
+}
+
+picture img {
+    width: 100%;
+    height: auto;
+}
+
+picture {
+    background-color: var(--az-blue);
+}
+
+header {
+    background-color: var(--az-blue);
+    padding: 0.75rem;
+    text-align: center;
+    color: var(--header-footer);
+}
+
+#accent {
+    background-color: var(--az-red);
+    height: 0.75rem;
+    width: 100%;
+}
+
+.card {
+    text-align: center;
+}
+
+.card img {
+    width: 2.3rem;
+    height: auto;
+}
+
+h2 {
+    margin: 0;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+td {
+    text-align: center;
+    padding: 0.5rem;
+}
+
+footer {
+    background-color: var(--az-blue);
+    padding: 1rem;
+    text-align: center;
+    color: var(--header-footer);
+    margin-top: 0.5rem;
+}
