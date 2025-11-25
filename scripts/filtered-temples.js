@@ -90,15 +90,15 @@ const temples = [
 ];
 
 
-for (item in temples){
-    let templeCard = document.createElement("div");
+for (let i = 0; i < temples.length; i++){
+    const templeCard = document.createElement("div");
     templeCard.innerHTML = `<div>
-        <h2>${item.templeName}</h2>
-        <p>${item.location}</p>
-        <p>${item.dedicated}</p>
-        <p>${item.area}</p>
-        <img src="${imageUrl}" alt="${templeName}>
+        <h2>${temples[i].templeName}</h2>
+        <p>Location: ${temples[i].location}</p>
+        <p>Dedicated: ${temples[i].dedicated}</p>
+        <p>Size: ${temples[i].area} sq ft</p>
+        <img src="${temples[i].imageUrl}" alt="${temples[i].templeName}>
     </div>`;
-    document.body.appendChild(templeCard);
+    document.querySelector("main").appendChild(templeCard);
    
 }

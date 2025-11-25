@@ -66,7 +66,12 @@ main {
     color: var(--main-text);
 }
 
-figure img {
+main div {
+    background-color: #E9E8E8;
+    margin: 0.75rem;
+}
+
+main div img {
     width: 12rem;
     margin: 0.5rem;
 }

@@ -2,6 +2,7 @@
     header {
         grid-template-columns: 1fr 1fr 2fr;
         background-color: var(--header-accent);
+        max-width: 100%;
     }
     
     #menu {
@@ -30,6 +31,7 @@
 
     main {
         grid-template-columns: repeat(auto-fit, minmax(15rem, auto));
+        max-width: 100%;
     }
 
     h1 {
