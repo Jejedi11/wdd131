@@ -1,0 +1,41 @@
+@media (min-width:37.5em) {
+    header {
+        grid-template-columns: 1fr 1fr 2fr;
+        background-color: var(--header-accent);
+        max-width: 100%;
+    }
+    
+    #menu {
+        display: none;
+    }
+
+    h2 {
+        grid-column: 1 / 2;
+    }
+
+    nav {
+        grid-column: 3 / -1;
+        
+    }
+
+    #menuList {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #menuList li {
+        width: 100%;
+        padding: 1.3rem;
+        background-color: var(--header-accent);
+    }
+
+    main {
+        grid-template-columns: repeat(auto-fit, minmax(15rem, auto));
+        max-width: 100%;
+    }
+
+    h1 {
+        grid-column: 1 / -1;
+    } 
+
+}

@@ -1,0 +1,84 @@
+:root {
+    --header-accent: #BCD4DE;
+    --hover-accent: #A5CCD1;
+    --background-color: #fff;
+    --header-footer-text: #000000;
+    --main-text: #000000;
+}
+
+body {
+    margin: 0;
+    font-family: IBM Plex Sans;
+}
+
+header {
+    text-align: center;
+    display: grid;
+    max-width: 100em;
+    color: var(--header-footer-text);
+}
+
+#menu {
+    text-align: right;
+    height: 1.5rem;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "X";
+}
+
+nav ul {
+    display: none;
+    flex-direction: column;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+#menuList.open {
+    display: flex;
+}
+
+nav li {
+    padding: 1rem;
+}
+
+nav li a {
+    text-decoration: none;
+    color: var(--header-footer-text);
+}
+
+nav li:hover {
+    background-color: var(--hover-accent);
+}
+
+main {
+    max-width: 100em;
+    margin: 0;
+    display: grid;
+    text-align: center;
+    background-color: var(--background-color);
+    color: var(--main-text);
+}
+
+main div {
+    background-color: #E9E8E8;
+    margin: 0.75rem;
+}
+
+main div img {
+    width: 12rem;
+    margin: 0.5rem;
+}
+
+footer {
+    background-color: var(--header-accent);
+    text-align: center;
+    padding: 1rem;
+    color: var(--header-footer-text);
+}
