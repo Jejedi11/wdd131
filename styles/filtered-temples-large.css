@@ -30,9 +30,13 @@
     }
 
     main {
-        grid-template-columns: repeat(auto-fit, minmax(15rem, auto));
+        grid-template-columns: repeat(auto-fit, minmax(20rem, auto));
         max-width: 100%;
     }
+
+    main div img {
+        width: 18rem;
+}
 
     h1 {
         grid-column: 1 / -1;

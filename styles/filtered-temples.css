@@ -4,6 +4,7 @@
     --background-color: #fff;
     --header-footer-text: #000000;
     --main-text: #000000;
+    --border: #D9D8D7;
 }
 
 body {
@@ -69,11 +70,13 @@ main {
 main div {
     background-color: #E9E8E8;
     margin: 0.75rem;
+    border: solid 1px var(--border);
 }
 
 main div img {
     width: 12rem;
-    margin: 0.5rem;
+    height: auto;
+    box-shadow: 0 0 8px #000000;
 }
 
 footer {

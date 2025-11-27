@@ -92,13 +92,13 @@ const temples = [
 
 for (let i = 0; i < temples.length; i++){
     const templeCard = document.createElement("div");
-    templeCard.innerHTML = `<div>
+    templeCard.innerHTML = `
         <h2>${temples[i].templeName}</h2>
         <p>Location: ${temples[i].location}</p>
         <p>Dedicated: ${temples[i].dedicated}</p>
         <p>Size: ${temples[i].area} sq ft</p>
-        <img src="${temples[i].imageUrl}" alt="${temples[i].templeName}>
-    </div>`;
+        <img src="${temples[i].imageUrl}" alt="${temples[i].templeName}" loading="lazy">
+    `;
     document.querySelector("main").appendChild(templeCard);
    
 }
