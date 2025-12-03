@@ -1,0 +1,26 @@
+:root {
+  --nav-accent: #8C9B97;
+  --icon-accent: #D58534;
+}
+
+header nav {
+  background-color: var(--nav-accent);
+  display: grid;
+  grid-template-columns: 12rem 1fr;
+}
+
+body {
+  font-family: Roboto;
+  text-align: center;
+  margin: 0;
+}
+
+#logo {
+  font-family: Montserrat;
+  background-color: var(--icon-accent);
+}
+
+footer {
+  background-color: var(--nav-accent);
+  height: 4rem;
+}
