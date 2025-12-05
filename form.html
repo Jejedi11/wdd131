@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+  <link rel="stylesheet" href="styles/form.css">
+  <script src="scripts/form.js" defer></script>
+  <script defer src="scripts/getdates.js"></script>
+</head>
+
+<body>
+  <h1>Product Review</h1>
+  <form method="get" class="pf1" action="review.html">
+    <fieldset>
+      <legend>Product Name*</legend>
+      <select id="product-name" name="product-name" required>
+        <option disabled selected>Select a Product...</option>
+      </select>
+    </fieldset>
+    <fieldset>
+      <legend>Overall Rating*</legend>
+      <div>
+        <label><input type="radio" id="stars" name="stars" value="1" required>&star;</label>
+      </div>
+      <div>
+        <label><input type="radio" id="two-stars" name="stars" value="2" required>&star;&star;</label>
+      </div>
+      <div>
+        <label><input type="radio" id="three-stars" name="stars" value="3" required>&star;&star;&star;</label>
+      </div>
+      <div>
+        <label><input type="radio" id="four-stars" name="stars" value="4" required>&star;&star;&star;&star;</label>
+      </div>
+      <div>
+        <label><input type="radio" id="five-stars" name="stars" value="5"
+            required>&star;&star;&star;&star;&star;</label>
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend>Date of Installation*</legend>
+      <input type="date" id="install-date" name="date" required>
+    </fieldset>
+    <fieldset>
+      <legend>Which features did you find useful in the product? </b> (Check all that apply)</legend>
+      <div>
+        <label><input type="checkbox" id="durability" name="features">Durability</label>
+      </div>
+      <div>
+        <label><input type="checkbox" id="ease" name="features">Ease of Use</label>
+      </div>
+      <div>
+        <label><input type="checkbox" id="performance" name="features">Performance</label>
+      </div>
+      <div>
+        <label><input type="checkbox" id="durability" name="features">Durability</label>
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend>Written Review (optional)</legend>
+      <textarea name="review" id="review"></textarea>
+    </fieldset>
+    <fieldset>
+      <legend>Your Name (optional)</legend>
+      <input type="text" id="name" name="name">
+    </fieldset>
+    <input type="submit" value="Submit My Review">
+  </form>
+</body>
+<footer>
+  <p>
+    ©<span id="current-year"></span> | James Michelson | Arizona
+  </p>
+  <p>
+    <span id="last-populated"></span>
+  </p>
+</footer>
+
+</html>

@@ -1,0 +1,46 @@
+h1 {
+  text-align: center;
+}
+
+.pf1 {
+  background-color: #D0C8D0;
+}
+
+fieldset {
+  display: block;
+  padding: 0.9rem;
+  border: none;
+  padding-top: 1rem;
+}
+
+legend {
+  display: block;
+  padding-top: 2rem;
+}
+
+.pf1 :required {
+  border-left: solid 5px red;
+}
+
+.pf1 :required:valid {
+  border-left: solid 5px green;
+}
+
+.pf1 input[type="date"],
+.pf1 select,
+.pf1 textarea,
+.pf1 input[type="text"] {
+  min-height: 44px;
+  width: 15rem;
+}
+
+.pf1 input[type="submit"] {
+  padding: 1rem;
+  min-height: 44px;
+  margin: 1rem;
+  width: 15rem;
+}
+
+footer {
+  text-align: center;
+}
