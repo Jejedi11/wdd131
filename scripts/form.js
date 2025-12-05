@@ -31,5 +31,6 @@ for (let i = 0; i < products.length; i++) {
   productItem = document.createElement("option");
   productItem.innerHTML = `${products[i].name}`;
   productItem.id = `${products[i].id}`;
+  productItem.value = "";
   productMenu.appendChild(productItem);
 }

@@ -1,12 +1,18 @@
 
-if (parseInt(localStorage.getItem('submissions')) == null) {
-  localStorage.setItem('submissions', "1");
+let counterNum = localStorage.getItem('submissions');
+counterNum = parseInt(counterNum);
+
+if (counterNum > 0) {
+  counterNum++
+  localStorage.setItem('submissions', counterNum)
 }
 else {
-  localStorage.setItem(parseInt(localStorage.getItem('submissions')) + 1);
+  localStorage.setItem('submissions', "1")
+  counterNum = 1;
 }
 
-const counterMessage = document.createElement('p');
-counterMessage.innerHTML = `You have submitted ${getItem('submissions')} reviews.`;
-document.querySelector('body').appendChild(counterMessage);
+let counterMessage = document.createElement('p');
+counterMessage.innerHTML = `You have submitted ${counterNum} reviews.`;
+document.querySelector("main").appendChild(counterMessage);
+
 

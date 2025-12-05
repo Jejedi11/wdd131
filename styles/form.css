@@ -1,5 +1,8 @@
-h1 {
+header {
   text-align: center;
+  background-color: #016CB2;
+  color: #fff;
+  padding: 1rem;
 }
 
 .pf1 {
@@ -13,17 +16,9 @@ fieldset {
   padding-top: 1rem;
 }
 
-legend {
+label {
   display: block;
-  padding-top: 2rem;
-}
-
-.pf1 :required {
-  border-left: solid 5px red;
-}
-
-.pf1 :required:valid {
-  border-left: solid 5px green;
+  margin: 0.4rem;
 }
 
 .pf1 input[type="date"],
@@ -43,4 +38,7 @@ legend {
 
 footer {
   text-align: center;
+  background-color: #016CB2;
+  color: #fff;
+  padding: 1rem;
 }
