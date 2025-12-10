@@ -1,0 +1,77 @@
+body {
+  background-color: #fff;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  background-color: blueviolet;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+nav {
+  background-color: cyan;
+  display: none;
+  flex-direction: column;
+  text-align: center;
+}
+
+nav.open {
+  display: flex;
+}
+
+#menu {
+  height: auto;
+  width: 4rem;
+  grid-column: 5 / -1;
+  justify-self: end;
+  font-size: 2rem;
+}
+
+#menu::before {
+  content: "☰"
+}
+
+#menu.open::before {
+  content: "X";
+}
+
+#logo {
+  justify-self: center;
+  margin-left: 1rem;
+}
+
+nav {
+  grid-column: 1 / -1;
+}
+
+nav a {
+  padding: 1rem;
+  padding-top: 1.5rem;
+}
+
+.banner-text {
+  padding: 1rem;
+  text-align: center;
+}
+
+.banner-text p {
+  padding: 1rem;
+}
+
+.events div {
+  padding: 2rem;
+  background-color: rgb(190, 190, 241);
+  margin: 1rem;
+}
+
+.events h2 {
+  margin-left: 1rem;
+}
+
+footer {
+  text-align: center;
+  background-color: blueviolet;
+  padding: 1rem;
+}
