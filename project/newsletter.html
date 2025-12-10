@@ -1,15 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MODCT Newsletter</title>
-  <meta name="description" content="Home page for the Make our dreams come true group.">
+  <meta name="description" content="Find this months newsletter page.">
   <meta name="author" content="James Michelson">
   <link rel="stylesheet" href="styles/main.css">
   <link rel="stylesheet" href="styles/main-large.css">
   <script defer src="scripts/nav.js"></script>
+  <script defer src="scripts/newsletter.js"></script>
+  <script defer src="scripts/getdates.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
@@ -31,7 +38,6 @@
     </div>
     <div id="newsletter-link">
       <h2>Sign up to our newsletter</h2>
-      <p>Recieve the newsletter by email each month</p>
       <a href="#newsletter-form">Sign Up</a>
     </div>
     <div id="newsletter">
@@ -40,25 +46,68 @@
         <h3>By James Michelson</h3>
         <p>After a long while I have finally finished the first version of the website. What do you think? I have
           forgone
-          some features but will add them in later. Shoot me an email at James@makeourdreamscometrue.com for any
+          some features but will add them in later. Shoot me an email at james@makeourdreamscometrue.com for any
           suggestions to the site. Roachplus is on it's way, so keep an eye out for that, I just got a lot more storage
           in
           the home server and will put that up and running as soon as I can get to it.</p>
       </article>
+      <img src="images/cricket.webp" alt="Lily, Miriam, Becky" width="500" height="500" loading="lazy">
       <article>
-        <h2>Miriam's Farewell</h2>
-        <h3>By Miriam Michelson</h3>
-      </article>
-    </div>
-    <form id="newsletter-form">
-      <fieldset>
-        <label>Name</label>
+        <h2>Charity Never Faileth</h2>
+        <h3>By President Thomas S. Monson</h3>
+        <p>I have in mind the charity that impels us to be sympathetic, compassionate, and merciful, not only in times
+          of sickness and affliction and distress but also in times of weakness or error on the part of others.
 
+          There is a serious need for the charity that gives attention to those who are unnoticed, hope to those who
+          are
+          discouraged, aid to those who are afflicted. True charity is love in action. The need for charity is
+          everywhere.
+
+          Needed is the charity which refuses to find satisfaction in hearing or in repeating the reports of
+          misfortunes
+          that come to others, unless by so doing, the unfortunate one may be benefited. The American educator and
+          politician Horace Mann once said, “To pity distress is but human; to relieve it is godlike” [Horace Mann,
+          Lectures on Education (1845), 297].
+
+          Charity is having patience with someone who has let us down. It is resisting the impulse to become offended
+          easily. It is accepting weaknesses and shortcomings. It is accepting people as they truly are. It is looking
+          beyond physical appearances to attributes that will not dim through time. It is resisting the impulse to
+          categorize others. (“Charity Never Faileth,” Ensign or Liahona, Nov. 2010, 124)
+        </p>
+      </article>
+      <img src="images/fencing.webp" alt="Fencing" width="500" height="500" loading="lazy">
+      <article>
+        <h2>Annie</h2>
+        <h3>By Adam Michelson</h3>
+        <p>It's a musical set in the 1930s playing at the Beale Street Theater December 11th-13th and 18th-20th. I have
+          three roles in it, Drake (Oliver Warbucks' butler), Bert Healy (radio show host) and Cordell Hull (President's
+          cabinet). Come and see!</p>
+      </article>
+      <img src="images/fencing2.webp" alt="Fencing" width="500" height="500" loading="lazy">
+      <img src="images/kirsten.webp" alt="Kirsten" width="500" height="500" loading="lazy">
+    </div>
+    <form method="get" id="newsletter-form" action="thanks.html">
+      <fieldset>
+        <legend>Sign up to the newsletter</legend>
+        <div>
+          <label for="name">Name* </label>
+          <input type="text" name="fname" id="name" autocomplete="name" required>
+        </div>
+        <div>
+          <label for="email">Email* </label>
+          <input type="email" name="email" id="email" autocomplete="email" required>
+        </div>
+        <input type="submit" name="sign-up" id="sign-up" value="Sign up">
       </fieldset>
     </form>
   </main>
   <footer>
-    <p>Make Our Dreams Come True©</p>
+    <p>
+      ©<span id="current-year"></span> | James Michelson | Arizona
+    </p>
+    <p>
+      <span id="last-populated"></span>
+    </p>
   </footer>
 </body>
 

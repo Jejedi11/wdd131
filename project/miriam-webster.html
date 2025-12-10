@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
@@ -7,9 +7,16 @@
   <title>Miriam-Webster</title>
   <link rel="stylesheet" href="styles/main.css">
   <link rel="stylesheet" href="styles/main-large.css">
-  <link rel="stylesheet" href="styles/miriam_webster.css">
   <script defer src="scripts/nav.js"></script>
   <script defer src="scripts/miriam-webster.js"></script>
+  <script defer src="scripts/getdates.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <meta name="author" content="James Michelson">
+  <meta name="description" content="A dictionary of words and phrases that are unique to us or uncommon.">
 </head>
 
 <body>
@@ -28,13 +35,20 @@
     <div class="banner">
       <h1>Miriam-Webster</h1>
       <p>If you have ever watched our films or talked with us you may have noticed that we use some peculiar words and
-        phrases. This is a collection of the most common words and expressions.</p>
+        phrases. Many of these we made up, so we thought we would make a small dictionary, miriam-webster (named after
+        our cousin Miriam).</p>
     </div>
     <section class="entrys">
+      <h2>Entrys:</h2>
     </section>
   </main>
   <footer>
-    <p>Make Our Dreams Come True©</p>
+    <p>
+      ©<span id="current-year"></span> | James Michelson | Arizona
+    </p>
+    <p>
+      <span id="last-populated"></span>
+    </p>
   </footer>
 </body>
 

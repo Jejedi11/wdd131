@@ -1,15 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>More</title>
-  <meta name="description" content="Home page for the Make our dreams come true group.">
+  <meta name="description" content="More resources for MODCT.">
   <meta name="author" content="James Michelson">
   <link rel="stylesheet" href="styles/main.css">
   <link rel="stylesheet" href="styles/main-large.css">
   <script defer src="scripts/nav.js"></script>
+  <script defer src="scripts/getdates.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
@@ -27,15 +33,30 @@
   <main>
     <div class="banner">
       <h1>More</h1>
+      <p>Links and resources to our other projects.</p>
     </div>
-    <div>
-      <iframe src="https://www.youtube.com/embed/?listType=user_uploads&list=UCLKptol3dPvn2ujXoGdhc5A" width="480"
-        height="400"></iframe>
-
+    <div id="more">
+      <div class="info">
+        <h2>Our YouTube Channel</h2>
+        <a href="https://www.youtube.com/@makeourdreamscome2pass951">Make our Dreams Come 2 Pass</a>
+      </div>
+      <div class="info">
+        <h2>Roach Plus (Media Server)</h2>
+        <a href="http://roachplus.makeourdreamscometrue.com">Roach Plus</a>
+      </div>
+      <div class="info">
+        <h2>James' github</h2>
+        <a href="https://github.com/Jejedi11">Profile</a>
+      </div>
     </div>
   </main>
   <footer>
-    <p>Make Our Dreams Come True©</p>
+    <p>
+      ©<span id="current-year"></span> | James Michelson | Arizona
+    </p>
+    <p>
+      <span id="last-populated"></span>
+    </p>
   </footer>
 </body>
 

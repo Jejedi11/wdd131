@@ -1,16 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About Us</title>
-  <meta name="description" content="Home page for the Make our dreams come true group.">
+  <meta name="description" content="The About us page for MODCT.">
   <meta name="author" content="James Michelson">
   <link rel="stylesheet" href="styles/main.css">
   <link rel="stylesheet" href="styles/main-large.css">
-  <link rel="stylesheet" href="styles/about.css">
   <script defer src="scripts/nav.js"></script>
+  <script defer src="scripts/getdates.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
@@ -29,26 +34,34 @@
     <div class="banner">
       <h1>About Us</h1>
     </div>
-    <div class="profile">
-      <h1>James Michelson</h1>
-      <h2>Web Developer</h2>
-      <img src="images/james-michelson.webp" alt="James Michelson" loading="lazy" width="200px" height="auto">
-      <p>Jack of many trades and skilled at none he loves computers, but hates them as well.</p>
-    </div>
-    <div class="profile">
-      <h1>Spencer D. Michelson</h1>
-      <h2>Executive Music Producer</h2>
-      <img src="images/spencer-michelson.webp" alt="Spencer D. Michelson" loading="lazy" width="200px" height="auto">
-      <p>Singing from age 8 making music from age 14 and now working on perfecting mixing and mastering is a talented
-        musician who has made music from hip-hop rap to orchestral compositions. His goal is to make great music that
-        strikes emotion into the audience and creates long lasting memories.</p>
-      <p>Writer, Composer, Sound Designer, Director, Thinker, Avid Mr Beast Fan, YouTuber, Smash Bros Player, Music
-        Artist, Nintendo Collector, Botswana's Premier Online University Graduate, Social Media Influencer, and
-        Beginning Fencer.</p>
+    <div id="profiles">
+      <div class="profile">
+        <h1>James Michelson</h1>
+        <h2>Web Developer</h2>
+        <img src="images/james-michelson.webp" alt="James Michelson" loading="lazy" width=200 height=200>
+        <p>The man responsible for this page, he enjoys computers and nature. He only uses linux and is fond of games.
+          He enjoys spending time with family and friends.</p>
+      </div>
+      <div class="profile">
+        <h1>Spencer D. Michelson</h1>
+        <h2>Executive Music Producer</h2>
+        <img src="images/spencer-michelson.webp" alt="Spencer D. Michelson" loading="lazy" width=200>
+        <p>Singing from age 8 making music from age 14 and now working on perfecting mixing and mastering is a talented
+          musician who has made music from hip-hop rap to orchestral compositions. His goal is to make great music that
+          strikes emotion into the audience and creates long lasting memories.</p>
+        <p>Writer, Composer, Sound Designer, Director, Thinker, Avid Mr Beast Fan, YouTuber, Smash Bros Player, Music
+          Artist, Nintendo Collector, Botswana's Premier Online University Graduate, Social Media Influencer, and
+          Beginning Fencer.</p>
+      </div>
     </div>
   </main>
   <footer>
-    <p>Make Our Dreams Come True©</p>
+    <p>
+      ©<span id="current-year"></span> | James Michelson | Arizona
+    </p>
+    <p>
+      <span id="last-populated"></span>
+    </p>
   </footer>
 </body>
 
