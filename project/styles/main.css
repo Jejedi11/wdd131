@@ -51,9 +51,10 @@ nav a {
   padding-top: 1.5rem;
 }
 
-.banner-text {
+.banner {
   padding: 1rem;
   text-align: center;
+  margin: 1rem;
 }
 
 .banner-text p {
